@@ -65,6 +65,7 @@ endfunction
 au BufEnter /* call LoadCscope()
 command LoadCscope call LoadCscope()
 source ~/.vim/plugin/cscope_maps.vim
+set nocscopeverbose
 
 if has("autocmd")
   " Enable file type detection.
