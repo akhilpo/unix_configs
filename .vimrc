@@ -87,3 +87,5 @@ let g:ctrlp_max_depth=40
 "Tagbar
 nmap <F8> :TagbarToggle<CR>
 let g:tagbar_width = 50
+
+silent! so .vimlocal
