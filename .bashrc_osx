@@ -8,5 +8,6 @@ export EDITOR="vim"
 alias vim="nvim"
 alias gotows="cd ~/work"
 alias buspirate="sudo cu -s 115200 -l //dev/tty.usbserial-A900ftNH"
+alias setcscope="export CSCOPE_DB=$(pwd)"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
