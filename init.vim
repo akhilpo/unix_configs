@@ -3,10 +3,12 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'majutsushi/tagbar'
 Plug 'tpope/vim-sensible'
-Plug 'ctrlpvim/ctrlp.vim'
+"Plug 'ctrlpvim/ctrlp.vim'
 Plug 'rakr/vim-one'
 Plug 'KeitaNakamura/neodark.vim'
 Plug 'tomasiser/vim-code-dark'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 " Initialize plugin system
 call plug#end()
@@ -21,6 +23,7 @@ set nocscopeverbose
 
 """Key Mappings"""
 nmap <F8> :TagbarToggle<CR>
+nnoremap <C-p> :Files<CR>
 
 """Cscope Setup"""
 set tags=tags;/
@@ -39,9 +42,9 @@ source ~/.vim/plugin/cscope_maps.vim
 set nocscopeverbose
 
 """Ctrl-P configs"""
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_max_files=0
-let g:ctrlp_max_depth=40
+"let g:ctrlp_map = '<c-p>'
+"let g:ctrlp_cmd = 'CtrlP'
+"let g:ctrlp_working_path_mode = 'ra'
+"let g:ctrlp_max_files=0
+"let g:ctrlp_max_depth=40
 
