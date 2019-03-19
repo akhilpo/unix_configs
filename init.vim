@@ -3,6 +3,7 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'majutsushi/tagbar'
 Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-fugitive'
 "Plug 'ctrlpvim/ctrlp.vim'
 Plug 'rakr/vim-one'
 Plug 'KeitaNakamura/neodark.vim'
