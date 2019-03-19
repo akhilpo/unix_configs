@@ -1,5 +1,6 @@
 #EXPORTS
-export PS1="\n[\[\e[37m\]\T\[\e[m\]]\[\e[37m\]\u\[\e[m\]@\[\e[37m\]\h\[\e[m\]:\w\[\e[32m\]\\n\$\[\e[m\] "
+export PROMPT_COMMAND="echo" # add a newline after every command
+export PS1="[\[\e[37m\]\T\[\e[m\]]\[\e[37m\]\u\[\e[m\]@\[\e[37m\]\h\[\e[m\]:\w\[\e[32m\]\\n\$\[\e[m\] "
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export GOPATH=~/work/go
 export EDITOR="vim"
@@ -11,5 +12,6 @@ alias vim="nvim"
 alias gotows="cd ~/work"
 alias buspirate="sudo cu -s 115200 -l //dev/tty.usbserial-A900ftNH"
 alias setcscope="export CSCOPE_DB=$(pwd)"
+alias sov="source ~/.virtualenvs/default/bin/activate"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
